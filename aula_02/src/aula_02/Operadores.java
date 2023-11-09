@@ -15,7 +15,6 @@ public class Operadores {
 				int idade = 18;
 		
 		float média = 2.456789f;
-		
 		int tamanho = 20;
 				
 		System.out.println("A soma das variaveis valor1 e valor2 é igual a:" + (valor1 + valor2));
