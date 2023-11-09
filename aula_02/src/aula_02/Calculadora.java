@@ -18,9 +18,15 @@ public class Calculadora {
 
 		System.out.println("soma: " + (numero1 + numero2));
 		System.out.println("subtração: " + (numero1 - numero2));
-		System.out.println("divisão: " + (numero1 / numero2));
-		System.out.println("multiplicação: " + (numero1 * numero2));
 
+		// condição para divisão por zero!//
+
+		if (numero2 > 0) {
+			System.out.println("divisão: " + (numero1 / numero2));
+		} else {
+			System.out.println("não existe divisão por zero!");
+		}
+		System.out.println("multiplicação: " + (numero1 * numero2));
 		System.out.println("Raiz quadrada do numero1: " + (Math.sqrt(numero1)));
 		System.out.println("Pontenciação do numero1 pelo numero2:" + (Math.pow(numero1, numero2)));
 
