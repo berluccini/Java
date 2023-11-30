@@ -8,6 +8,8 @@ public class ExeOptional {
 		
 		String [] palavras = new String[10];
 		String palavra ="";
+		String teste = "batatinha";
+		
 		for(var p : palavras) {
 			System.out.println(p);
 		}
@@ -20,6 +22,15 @@ public class ExeOptional {
 	}else	
 
 		System.out.println("A Palavra é nula!");
-	}
+	
 
+	Optional<String> opTeste =Optional.ofNullable(teste);
+	if(opTeste.isEmpty())
+	 System.out.println("vazio!");
+
+	if(opTeste.isPresent())
+		System.out.println("tem uma string!");
+	
+	System.out.println(opTeste.get());
+}
 }
